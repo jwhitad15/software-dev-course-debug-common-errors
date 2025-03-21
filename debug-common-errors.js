@@ -24,22 +24,25 @@ Think about which debugging methods you found most useful and how you might appl
 // Description:
 // This program is intended to display a simple prompt in the console but fails to run.
 
-console.log("Welcome to the bootcamp
+console.log("Welcome to the Bootcamp.");
 
-// What’s Wrong?
+// What’s Wrong? ---> This console is missing closing quotation marks at the end of bootcamp, a closing parentheses,
+//                    and some might argue a (;). You could also capitalize bootcamp and add a period to the phrase.
 
 
 // Program B
 // Description:
 // This code attempts to multiply each number in an array by 2 and display the results. However, it crashes at runtime.
 
-let numbers = [2, 4, "eight"];
+let numbers = [2, 4, 8];
 for (let i = 0; i < numbers.length; i++) {
   let doubled = numbers[i] * 2;
   console.log(doubled);
 }
 
-// What’s Wrong?
+// What’s Wrong? ---> There's nothing actually wrong with the function. Running as is provides successful outputs for
+//                    each value. Since "eight" isn't a numerical value, the arithmetic funciton outputs a "NaN" for 
+//                    that one, but if you change "eight" to 8, the console will output integers for each multiplication.
 
 
 
@@ -59,4 +62,4 @@ function isPrime(num) {
 
 console.log(isPrime(7)); // Expected true but gets false
 
-// What’s Wrong?
+// What’s Wrong? ---> I just switched the blue values of true and false to make the argument of console.log(isPrime(7)) true.
